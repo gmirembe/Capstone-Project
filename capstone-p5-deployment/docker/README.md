@@ -1,6 +1,6 @@
 # Capstone Image Filtering Microservice
 
-capatone is a simple cloud application developed as part of my  Udacity Cloud Engineering Nanodegree final project. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+CapStone is a simple cloud application developed as part of my  Udacity Cloud Engineering Nanodegree final project. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
 
 
