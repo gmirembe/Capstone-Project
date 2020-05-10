@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: gmirembe/capstone-reverseproxy 
+  backend_user:
+    build:
+      context: ../../capstone-p5-restapi-user
+    image: gmirembe/capstone-restapi-user
+  backend_feed:
+    build:
+      context: ../../capstone-p5-restapi-feed  
+    image: gmirembe/capstone-restapi-feed
+  frontend:
+    build:
+      context: ../../capstone-p5-frontend  
+    image: gmirembe/capstone-frontend

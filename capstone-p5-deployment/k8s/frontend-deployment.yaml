@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    service: capstone-frontend
+  name: capstone-frontend
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        service: capstone-frontend
+        api: external        
+    spec:
+      containers:
+      - image: gmirembe/capstone-frontend:latest
+        name: capstone-frontend
+        imagePullPolicy: Always          
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "192Mi"
+            cpu: "150m"                
+      restartPolicy: Always
+

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udagram-grace-dev # I propose to modify this to capstone-grace-dev
+  AWS_PROFILE: default
+  AWS_REGION: us-east-2
+  JWT_SECRET: helloworld
+  POSTGRESS_DB: udagramgracedev # create a new postgress db
+  POSTGRESS_HOST: udagramgracedev.cw1e6ggqrnjz.us-east-2.rds.amazonaws.com # and a new postgrss  host 
+  URL: http://localhost:8100  # maybe revise this port as well
+metadata:
+  name: env-configmap
+  
+  
